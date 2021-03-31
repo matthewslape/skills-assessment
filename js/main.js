@@ -1,23 +1,30 @@
-const changeDisplay = document.querySelector('select');
+//set trigger
 
-//attemt at switching from email to number view
+const ChangeDisplay = document.querySelector(".selector");
 
-changeDisplay.addEventListener('click', () => {
+const email = document.querySelector(".emailList");
+const num = document.querySelector(".numList");
 
-    var x = document.getElementsByClassName('numList');
-    var y = document.getElementsByClassName('emailList');
+function toggle() {
 
-    if (x.style.display === "block") {
-      x.style.display = "none";
-      y.style.display = "block";
+  if(email.style.display == "block") {
 
-    } 
-    
-    else {
+  console.log("test 1");
 
-      x.style.display = "block";
-      y.style.display = "none";
+  email.style.display = "none";
+  num.style.display = "block";
 
-    }
+  }
 
- });
+  else {
+
+    console.log("test 2");
+
+    email.style.display = "block";
+    num.style.display = "none";
+
+  }
+
+
+}
+

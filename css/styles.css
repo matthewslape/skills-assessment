@@ -7,7 +7,7 @@ body {
     align-items: center;
 }
 
-/*Styling Widget Container and atoms*/
+/*Styling Widget Container*/
 .container {
     width: 380px;
     background: black;
@@ -20,59 +20,65 @@ body {
 
 .contactGrid {
     width: 380px;
-    background: rgb(51, 51, 51);
+    background: rgb(37, 37, 37);
     display: grid;
     grid-template-columns: auto auto;
 
 }
 
+/*Figured out alternating Grid Color!*/
+.contactGrid :nth-child(even) {
+    background-color: rgb(26, 26, 26);
+}
+
+
 /*Styling Lists and List Items*/
 .nameList {
-
-    
     text-align: center;
     color: white;
-
 }
+
+
 
 .nameContainter {
     padding: 15px;
-    border: 1px solid rgb(39, 39, 39);
+    border: 1px solid rgb(14, 14, 14);
     display: flex;
     align-items: center;
 }
 
-svg {
-    width: 8px;
-    height: 8px;
-    padding: 2px;
-}
-/*Toggle for number to email*/
 
+/*Toggle for number to email*/
 
 .numList {
 
-    display: block;
+   
     text-align: start;
-    
+    display: none;
 }
 
 .emailList {
 
-    display: none;
     text-align: start;
+    display: block;
 
 }
+
+
+/*Set a background color opacity to 0, because the nth
+selector was selecting the names and changing their
+bg color as well*/
 
 .name {
     font-family: helvetica;
     font-size: 12pt;
-    padding-left: 6px;
+    padding-left: 12px;
+    background-color: rgba(51, 51, 51, 0) !important;
 }
 
 .email {
     padding: 15px;
-    border: 1px solid rgb(39, 39, 39);
+    border: 1px solid rgb(14, 14, 14);
     color: grey;
     font-family: helvetica;
     font-size: 12pt;
@@ -80,14 +86,48 @@ svg {
 
 .number {
     padding: 15px;
-    border: 1px solid rgb(39, 39, 39);
+    border: 1px solid rgb(14, 14, 14);
     color: grey;
     font-family: helvetica;
     font-size: 12pt;
 
 }
 
+/*Circles*/
+
+.greenCircle {
+    background-color: green;
+    border-radius: 6px;
+    width: 6px;
+    height: 6px;
+    padding: 2px;
+}
+
+.yellowCircle {
+    background: yellow;
+    border-radius: 6px;
+    width: 6px;
+    height: 6px;
+    padding: 2px;
+}
+
+.redCircle {
+    background: red;
+    border-radius: 6px;
+    width: 6px;
+    height: 6px;
+    padding: 2px;
+}
 /*Header*/
+
+#topTab{
+
+    background: linear-gradient(rgb(77, 77, 77), rgb(34, 34, 34));
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+}
+
 h1 {
     color: white;
     padding: 10px;
@@ -102,6 +142,9 @@ h1 {
     justify-content: flex-end;
     width: 340px;
     padding: 20px;
+    background: linear-gradient(rgb(44, 44, 44), rgb(34, 34, 34));
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 select {

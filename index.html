@@ -18,69 +18,58 @@
 
     <div class="container">
 
-        <h1>Contacts</h1>
+        <div id="topTab">
+
+            <h1>Contacts</h1>
+
+        </div>
 
         <div class="contactGrid">
 
             <div class="nameList">
 
                 <div class="nameContainter">
-                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="5" cy="5" r="5" fill="#52FF00"/>
-                    </svg>
+                    <div class="greenCircle"></div>
                     <div class="name">Christian</div>
                 </div>
 
                 <div class="nameContainter">
-                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="5" cy="5" r="5" fill="#52FF00"/>
-                    </svg>
+                    <div class="greenCircle"></div>
                     <div class="name">Rich</div>
                 </div>
 
                 <div class="nameContainter">
-                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="5" cy="5" r="5" fill="#52FF00"/>
-                    </svg>
+                    <div class="greenCircle"></div>
                     <div class="name">Scott</div>
                 </div>
 
                 <div class="nameContainter">
-                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="5" cy="5" r="5" fill="#52FF00"/>
-                    </svg>
+                    <div class="greenCircle"></div>
                     <div class="name">Danny</div>
                 </div>
 
                 <div class="nameContainter">
-                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="5" cy="5" r="5" fill="red"/>
-                    </svg>
+                    <div class="redCircle"></div>
                     <div class="name">Taka</div>
                 </div>
 
                 <div class="nameContainter">
-                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="5" cy="5" r="5" fill="yellow"/>
-                    </svg>
+                    <div class="yellowCircle"></div>
                     <div class="name">Tim</div>
                 </div>
 
                 <div class="nameContainter">
-                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="5" cy="5" r="5" fill="#52FF00"/>
-                    </svg>
+                    <div class="greenCircle"></div>
                     <div class="name">Patrick</div>
                 </div>
 
                 <div class="nameContainter">
-                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="5" cy="5" r="5" fill="yellow"/>
-                    </svg>
+                    <div class="yellowCircle"></div>
                     <div class="name">Jacques</div>
                 </div>
             
             </div>
+
 
             <div class="emailList">
                 <div class="email">christian@yahoo.com</div>
@@ -110,7 +99,7 @@
 
         <div id="bottomTab">
 
-            <select>
+            <select class="selector" onchange="toggle()">
                 <option Value="Phone Number">Phone Number</option>
                 <option Value="Email Adress">Email Adress</option>
             </select>
