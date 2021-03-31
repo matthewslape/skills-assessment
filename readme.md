@@ -1,3 +1,9 @@
+## Update
+added gradients to the header and footer
+
+switched dots from svgs to empty divs
+
+Figured out alternating Rows (Sort of) I had it set up, but when I added in the toggle function for the select box of phone and email, the nth-child selector did not target the email list.. I do not know why this is :/ So it is on the name and phone lists, but not on this email list yet!
 ## Notes from Matthew
 This is as far as I got with a three hour limit. HTML and CSS set up were pretty straight forward. The only thing I did not know how to exectute was the slight color alteration in the rows of the grid for the names and emails (from the lighter grey to the darker grey.) 
 
