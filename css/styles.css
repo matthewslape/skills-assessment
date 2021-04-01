@@ -54,13 +54,13 @@ body {
 
    
     text-align: start;
-    display: none;
+    display: block;
 }
 
 .emailList {
 
     text-align: start;
-    display: block;
+    display: none;
 
 }
 
