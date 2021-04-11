@@ -1,4 +1,6 @@
 ## Update
+4.10.2021: I figured out the nth child selector problem.
+
 added gradients to the header and footer
 
 switched dots from svgs to empty divs
